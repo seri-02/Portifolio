@@ -1,192 +1,136 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Programando e se divertindo" />
-    <meta name="keywords" content="Jonathas, Seri, " />
+    <meta name="description" content="Portfólio de Jonathas Seri - Desenvolvedor" />
+    <meta name="keywords" content="Jonathas Seri, desenvolvedor, portfólio" />
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="js/home.js" defer></script>
     <title>Jonathas Seri</title>
 </head>
 
 <body>
-    <!-- Header -->
     <header id="home">
-        <a href="https://www.linkedin.com/in/jonathas-seri/" title="Linkedin">
-            <i class="devicon-linkedin-plain"></i>
-        </a>
-        <a href="https://github.com/seri-02" title="GitHub">
-            <i class="devicon-github-original"></i>
-        </a>
+        <div class="brand">
+            <span class="dot"></span>
+            <p>Jonathas Seri</p>
+        </div>
+        <nav class="hide" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#academic">Formação</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+            </ul>
+            <span id="btn-side-menu" aria-label="Abrir ou fechar menu">
+                <i class="ph-list"></i>
+            </span>
+        </nav>
     </header>
-    <nav class="hide">
-        <ul>
-            <li>
-                <a href="#home">Início</a>
-            </li>
-            <li>
-                <a href="#academic">Formação acadêmica</a>
-            </li>
-            <li>
-                <a href="#experience">Experiência</a>
-            </li>
-            <li>
-                <a href="#projects">Projetos</a>
-            </li>
-            <li>
-                <a href="#papers">Sobre mim</a>
-            </li>
-        </ul>
-        <span id="btn-side-menu">
-            <i class="ph-caret-left"></i>
-        </span>
-    </nav>
-    <!-- Main -->
-    <main>
-        <section class="header">
-            <img src="images/perfil.jpg" alt="Jonathas Seri - Desenvolvedor"
-                title="Jonathas Seri - Desenvolvedor">
-            <h1 class="name font-primary">Jonathas Seri</h1>
-            <h2 class="slogan">
-                &lt programando e se divertindo />
-            </h2>
-        </section>
-        <div class="item">
-            <h2 id="stack">
-                &lt Tecnologias />
-            </h2>
-            <div class="frameworks">
-                <a href="" class="framework">
-                    <i class="devicon-html5-plain colored"></i>
-                    <span>HTML</span>
-                </a>
-                <a href="" class="framework">
-                    <i class="devicon-css3-plain colored"></i>
-                    <span>CSS</span>
-                </a>
-                <a href="" class="framework">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <span>JavaScript</span>
-                </a>
-                <a href="" class="framework">
-                    <i class="devicon-java-plain colored"></i>
-                    <span>Java</span>
-                </a>
-                <a href="" class="framework">
-                    <i class="devicon-c-original colored"></i>
-                    <span>C</span>
-                </a>
-                <a href="" class="framework">
-                    <i class="devicon-mysql-original colored"></i>
-                    <span>MySql</span>
-                </a>
-                <a href="" class="framework">
-                    <i class="devicon-linux-plain colored"></i>
-                    <span>Linux</span>
-                </a>
-            </div>
-        </div>
-        <div class="item">
-            <h2 id="academic">
-                &lt formação acadêmica />
-            </h2>
-            <ul>           
-                <li>
-                    Tecnólogo em Gestão da Tecnologia da Informação:
-                    <ul>
-                        <li>
-                            2024 - 2027;
-                        </li>
-                        <li>
-                            Faculdade de Tecnologia de Tatuí;
-                        </li>
-                        <li>
-                            C, Java e banco de dados relacional.
-                        </li>
-                    </ul>
-                </li>
-        <div class="item">
-            <h2 id="experience">
-                &lt experiências />
-            </h2>
-            <ul>
-                <li> Yazaki
-                    <ul>
-                        <li>
-                            2011 - 2012;
-                        </li>
-                        <li>
-                            Monitor de Linguagem de Programação Java;
-                        </li>
-                        <li>
-                            Monitor de Banco de Dados.
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="item">
-            <h2 id="projects">
-                &lt projetos implementados />
-            </h2>
-            <br>
-            <ul>
-                <li>
-                    Aplicativo - Apoio para Busca Ativa - Etec Sales Gomes
-                    <ul>
-                        <li>2022 - atualmente</li>
-                        <li>Front-end: Angular e Ionic</li>
-                        <li>Back-end: Node.js</li>
-                    </ul>
-                </li>
-                <br>
-                <li>
-                    Website - Cardápio Digital
-                    <ul>
-                        <li>2022;</li>
-                        <li>Tailwindcss.</li>
-                    </ul>
-                </li>
-                <br>
-                <li>
-                    Website - Etec Edson Galvão:
-                    <ul>
-                        <li>2019 - atualmente;</li>
-                        <li>PHP e Mysql.</li>
-                        <li>Painel administrativo com Content Management System.</li>
-                    </ul>
-                </li>         
-            </ul>
-        </div>
-        <div class="item">
-            <h2 id="papers">
-                &lt Sobre mim />
-            </h2>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis quam aliquid repudiandae voluptatem. Ad, delectus suscipit nam quos pariatur at obcaecati distinctio, officiis culpa mollitia adipisci commodi veritatis temporibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur alias aliquam temporibus qui esse exercitationem dolores inventore odio eos molestias. Veritatis eius consectetur natus tenetur culpa, expedita excepturi assumenda reiciendis!
-                </li>
-            </ul>
-        </div>
-    </main>
 
-    <!-- Footer -->
+    <main>
+        <section class="hero card">
+            <div class="hero-text">
+                <p class="tag">Desenvolvedor em formação</p>
+                <h1 class="name">Transformando problemas reais em software.</h1>
+                <p class="hero-description">
+                    Sou Jonathas Seri. Tenho interesse em desenvolvimento de sistemas, APIs e banco de dados, buscando aplicar lógica e boas práticas para criar soluções úteis e escaláveis.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#projects">Ver projetos</a>
+                    <a class="btn ghost" href="https://github.com/seri-02" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a class="btn ghost" href="https://www.linkedin.com/in/jonathas-seri/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                    <a class="btn ghost" href="assets/curriculo.pdf" download>Baixar CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/perfil.jpg" alt="Jonathas Seri - Desenvolvedor" title="Jonathas Seri - Desenvolvedor">
+            </div>
+        </section>
+
+        <section class="item card" id="stack">
+            <h2>Tecnologias</h2>
+            <div class="frameworks">
+                <a href="#" class="framework"><i class="devicon-html5-plain colored"></i><span>HTML</span></a>
+                <a href="#" class="framework"><i class="devicon-css3-plain colored"></i><span>CSS</span></a>
+                <a href="#" class="framework"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></a>
+                <a href="#" class="framework"><i class="devicon-java-plain colored"></i><span>Java</span></a>
+                <a href="#" class="framework"><i class="devicon-c-original colored"></i><span>C</span></a>
+                <a href="#" class="framework"><i class="devicon-mysql-original colored"></i><span>MySQL</span></a>
+                <a href="#" class="framework"><i class="devicon-linux-plain colored"></i><span>Linux</span></a>
+            </div>
+        </section>
+
+        <section class="item card timeline" id="academic">
+            <h2>Formação acadêmica</h2>
+            <ul>
+                <li>
+                    <h3>Tecnólogo em Gestão da Tecnologia da Informação</h3>
+                    <p>Jan/2024 - Previsão de conclusão: Jul/2027 • Faculdade de Tecnologia de Tatuí</p>
+                    <p>Estudos em C, Java, banco de dados relacional, engenharia de software, sistemas operacionais.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="item card timeline" id="experience">
+            <h2>Experiência</h2>
+            <ul>
+                <li>
+                    <h3>Yazaki Mercosul — Estagiário de Sistemas</h3>
+                    <p>Ago/2024 - Presente</p>
+                    <p>Atuação em suporte técnico e sustentação de sistemas corporativos e ERPs (TOTVS, SAP, Senior, Lecom), realizando análise e acompanhamento de incidentes, testes e validações de processos. Também atuo na documentação de processos, apoio a melhorias e manutenção de sistemas.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="item card timeline" id="projects">
+            <h2>Projetos</h2>
+            <ul>
+                <li>
+                    <h3>Sistema de Gerenciamento de Vendas e Estoque de Doces</h3>
+                    <p>2026 - atualmente</p>
+                    <p>Aplicação desenvolvida em Java para controle de vendas, estoque e registro de produtos, criada para gerenciar uma operação real de venda de doces. O sistema permite organizar produtos, acompanhar vendas e manter controle do estoque.</p>
+                    <p>Tecnologias: Java, Maven, MySQL, JDBC.</p>
+                </li>
+                <li>
+                    <h3>Sistema de Menu Interativo em C (Projeto Acadêmico)</h3>
+                    <p>2024</p>
+                    <p>Aplicação desenvolvida em linguagem C durante projeto em grupo na faculdade. O programa utiliza interface em menu no terminal e inclui funcionalidades como jogo da velha e um sistema simples de gerenciamento de pedidos para cafeteria, com foco no desenvolvimento de lógica de programação e estruturação de algoritmos.</p>
+                    <p>Tecnologias: C.</p>
+                </li>
+                <li>
+                    <h3>Sistema de Cadastro de Carros</h3>
+                    <p>2026</p>
+                    <p>Aplicação simples em Java para cadastro e consulta de veículos, desenvolvida como exercício de lógica de programação e estruturação de código.</p>
+                    <p>Tecnologias: Java.</p>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="item card" id="about">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou estudante e estagiário de Sistemas, com experiência em suporte e sustentação de sistemas corporativos. Tenho interesse em desenvolvimento back-end e venho me aprofundando em Java, banco de dados e boas práticas de desenvolvimento.
+                Busco evoluir continuamente por meio de projetos práticos e da construção de soluções para problemas reais.
+            </p>
+        </section>
+    </main>
+    
     <footer>
-        <h3 class="slogan">
-            &lt JonathasSeri />
-        </h3>
-        <div class="cycle">
-            <i class="ph-coffee"></i>
-            <i class="ph-caret-right"></i>
-            <i class="ph-code"></i>
-            <i class="ph-caret-right"></i>
-            <i class="ph-checks"></i>
+        <p>© 2026 Jonathas Seri</p>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/jonathas-seri/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                <i class="devicon-linkedin-plain"></i>
+            </a>
+            <a href="https://github.com/seri-02" target="_blank" rel="noopener noreferrer" title="GitHub">
+                <i class="devicon-github-original"></i>
+            </a>
         </div>
     </footer>
 </body>
