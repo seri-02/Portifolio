@@ -1,7 +1,8 @@
 :root {
-    --primary: rgb(32, 32, 32);
-    --secondary: rgb(179, 33, 11);
-    --white: #ffffffff;
-    --tertiary: rgb(18, 63, 155);
-    --fb: 1.65em;
+    --accent: #7aa2f7;
+    --text: #f3f6ff;
+    --text-soft: #9cafd3;
+    --panel: rgba(17, 25, 44, 0.82);
+    --panel-strong: rgba(12, 19, 34, 0.9);
+    --stroke: #27344f;
 }
