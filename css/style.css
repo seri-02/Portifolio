@@ -1,0 +1,287 @@
+@import url("variables.css");
+@import url("animations.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&family=Parisienne&display=swap');
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2rem 2rem;
+    z-index: 1;
+    transition: transform 300ms;
+    background-color: #eeee;
+    backdrop-filter: blur(3px);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+nav ul a {
+    color: var(--tertiary);
+}
+
+nav span {
+    position: absolute;
+    top: 50%;
+    right: 0;    
+    line-height: 1;
+    transform: translate(120%, -50%);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 0.3rem;
+    border-left: 1px solid black;
+    color: var(--secondary);
+    animation: arrow 1s infinite alternate-reverse;
+    cursor: pointer;
+    font-size: var(--fb); 
+}
+
+nav.hide {
+    transform: translate(-100%, -50%);
+}
+
+nav.hide span i {
+    transition: transform 300ms;
+}
+
+nav.hide span i {
+    transform: rotateZ(180deg);
+}
+
+
+ul {
+    padding-left: 0.5rem;
+    margin: 1px;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul>li>ul {
+    margin-left: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.font-primary {
+    font-family: 'Nunito Sans' sans-serif;
+}
+
+header {
+    height: 2rem;
+    background-color: var(--primary);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+header a {
+    color: var(--white);
+    font-size: var(--fb);
+}
+
+.slogan {
+    font-family: "Parisienne", cursive;
+    color: var(--tertiary);
+    text-align: center;
+    font-weight: lighter;
+    font-size: calc(1.5*var(--fb)); 
+}
+
+body {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.header img {
+    border-radius:100%;
+    width: 180px;
+}
+
+.header .name {
+    color: var(--primary);
+    animation: floating 1s infinite alternate ease-in-out;
+    font-size: calc(var(--fb)*2); 
+}
+
+.framework {
+    position: relative;
+}
+
+.framework span {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    background-color: var(--secondary);
+    color: var(--white);
+    font-size: calc(var(--fb)/2);
+    border-radius: 10px;
+    width: 70px;
+    transition: opacity 0.2s;
+    opacity: 0%;
+    text-align: center;
+    z-index: 1;
+}
+
+.framework span::after {
+    content: '';
+    position: absolute;
+    border-width: 5px 5px 0px 0px;
+    border-color: var(--secondary);
+    border-style: solid;
+    bottom: 0;
+    right: 50%;
+    transform: rotateZ(45deg) translate(50%, 0%);
+    z-index: -1;
+}
+
+.framework:hover span {
+    display: block;
+    opacity: 100%;
+}
+
+main {
+    margin: 0rem auto;
+    max-width: 720px;
+}
+
+main .item {
+    margin-top: 1rem;
+}
+
+main .item h2 {
+    font-family: "Parisienne", cursive;
+    color: var(--secondary);
+    font-size: calc(var(--fb)*1.5);
+    font-weight: normal;
+    text-align: center;
+}
+
+main>.item>ul>li {
+    margin-top: 1rem;
+}
+
+main>.item>ul>li>ul>li {
+    margin-top: 0.5rem;
+}
+
+main>.item>ul>li {
+    font-weight: normal;
+}
+
+main ul li {
+    text-align: justify;
+    font-weight: lighter;
+    font-size: calc(var(--fb)*0.75);
+}
+
+.frameworks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    max-width: 380px;
+}
+.framework i{
+    font-size: var(--fb);
+}
+
+
+.item a i {
+    color: white;
+    text-decoration: none;
+}
+
+
+footer .ph-caret-right {
+    font-size: var(--fb);
+    animation: arrowCycle 0.5s alternate-reverse infinite ;
+}
+
+footer {
+    margin: 0.5rem auto;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: var(--fb * 1.0);
+    box-sizing: border-box;
+}
+
+footer .cycle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 320px;
+}
+
+footer .slogan{
+    font-size: calc(var(--fb) * 2);
+}
+
+@media screen and (max-width: 720px) {
+    main {
+        width: 90%;
+    }
+
+    footer .cycle{
+        width: 100%;
+    }
+}
+
+@media print {
+
+    nav,
+    header {
+        display: none;
+    }
+
+}

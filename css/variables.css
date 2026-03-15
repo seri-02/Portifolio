@@ -1,0 +1,7 @@
+:root {
+    --primary: rgb(32, 32, 32);
+    --secondary: rgb(179, 33, 11);
+    --white: #ffffffff;
+    --tertiary: rgb(18, 63, 155);
+    --fb: 1.65em;
+}
