@@ -42,7 +42,7 @@ As principais tecnologias utilizadas neste portfólio foram:
 
 Você pode visualizar o portfólio aqui:
 
-https://portifolio-tan-iota-30.vercel.app/
+https://seri-02.github.io/Portifolio/
 
 ## Contato
 
