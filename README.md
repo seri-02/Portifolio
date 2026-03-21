@@ -42,7 +42,7 @@ As principais tecnologias utilizadas neste portfólio foram:
 
 Você pode visualizar o portfólio aqui:
 
-***Ele ainda não está no ar, assim que estiver colocarei o link de acesso aqui***
+https://portifolio-tan-iota-30.vercel.app/
 
 ## Contato
 
