@@ -5,55 +5,69 @@
     <meta name="keywords" content="Jonathas Seri, desenvolvedor, portfólio" />
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="js/home.js" defer></script>
     <title>Jonathas Seri</title>
 </head>
 
 <body>
+<!-- #region Header -->
     <header id="home">
         <div class="brand">
             <span class="dot"></span>
             <p>Jonathas Seri</p>
-        </div>
+        </div>        
         <nav class="hide" aria-label="Navegação principal">
             <ul>
                 <li><a href="#" id="go-top">Início</a></li>
-                <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#academic">Formação</a></li>
-                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#about"><i class="bi-person"></i> Sobre mim</a></li>
+                <li><a href="#projects"><i class="bi bi-folder2-open"></i> Projetos</a></li>
+                <li><a href="#academic"><i class="bi bi-mortarboard"></i> Formação</a></li>
+                <li><a href="#experience"><i class="bi bi-briefcase"></i> Experiência</a></li>
             </ul>
-            <span id="btn-side-menu" aria-label="Abrir ou fechar menu">
-                <i class="ph-list"></i>
-            </span>
         </nav>
     </header>
+<!-- #endregion -->
 
+<!-- #region Main -->
     <main>
+        <!-- #region Hero -->
         <section class="hero card">
             <div class="hero-text">
                 <p class="tag">Desenvolvedor em formação</p>
-                <h1 class="name">Transformando problemas reais em software.</h1>
+                <h1 class="name">Transformo problemas reais em soluções de software.</h1>
                 <p class="hero-description">
-                    Sou Jonathas Seri. Tenho interesse em desenvolvimento de sistemas, APIs e banco de dados, buscando aplicar lógica e boas práticas para criar soluções úteis e escaláveis.
+                    Sou Jonathas Seri e tenho interesse em desenvolvimento de sistemas, APIs e banco de dados, buscando aplicar lógica e boas práticas na criação de soluções úteis e escaláveis.
                 </p>
                 <div class="hero-actions">
-                    <a class="btn primary" href="#projects">Ver projetos</a>
-                    <a class="btn ghost" href="https://github.com/seri-02" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a class="btn ghost" href="https://www.linkedin.com/in/jonathas-seri/" target="_blank"
-                        rel="noopener noreferrer">LinkedIn</a>
-                    <a class="btn ghost" href="assets/CurriculoPortifolio.pdf" download>Baixar CV</a>
+                    <a class="btn primary" href="#projects">
+                        <i class="bi bi-folder2-open"></i>
+                        <span>Ver projetos</span>
+                    </a>
+                    <a class="btn ghost" href="https://github.com/seri-02" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a class="btn ghost" href="https://www.linkedin.com/in/jonathas-seri/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a class="btn ghost" href="assets/CurriculoPortifolio.pdf" download>
+                        <i class="bi bi-download"></i>
+                        <span>Baixar CV</span>
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/perfil.jpg" alt="Jonathas Seri - Desenvolvedor" title="Jonathas Seri - Desenvolvedor">
+                <img src="images/AvatarMeWBg.png" alt="Jonathas Seri - Desenvolvedor" title="Jonathas Seri - Desenvolvedor">
             </div>
         </section>
+        <!-- #endregion -->
 
-        <section class="item card" id="stack">
+        <!-- #region Tecnologias -->
+        <section class="item card reveal" id="stack">
             <h2>Tecnologias</h2>
             <div class="frameworks">
                 <a href="#" class="framework"><i class="devicon-html5-plain colored"></i><span>HTML</span></a>
@@ -63,20 +77,25 @@
                 <a href="#" class="framework"><i class="devicon-c-original colored"></i><span>C</span></a>
                 <a href="#" class="framework"><i class="devicon-mysql-original colored"></i><span>MySQL</span></a>
                 <a href="#" class="framework"><i class="devicon-linux-plain colored"></i><span>Linux</span></a>
+                <a href="#" class="framework"><i class="devicon-git-plain colored"></i><span>Git</span></a>
             </div>
         </section>
+        <!-- #endregion -->
 
-         <section class="item card" id="about">
+        <!-- #region Sobre mim -->
+         <section class="item card reveal" id="about">
             <h2>Sobre mim</h2>
             <p>
                 Sou estudante e estagiário de Sistemas, com experiência em suporte e sustentação de sistemas corporativos. Tenho interesse em desenvolvimento back-end e venho me aprofundando em Java, banco de dados e boas práticas de desenvolvimento.
                 Busco evoluir continuamente por meio de projetos práticos e da construção de soluções para problemas reais.
             </p>
         </section>
+        <!-- #endregion -->
 
-          <section class="item card timeline" id="projects">
+        <!-- #region Projetos -->
+          <section class="item card reveal" id="projects">
             <h2>Projetos</h2>
-            <ul>
+            <ul class="project-grid">
                 <li>
                     <h3>Sistema de Gerenciamento de Vendas e Estoque de Doces</h3>
                     <p>2026 - atualmente</p>
@@ -96,10 +115,11 @@
                     <p>Tecnologias: Java.</p>
                 </li>
             </ul>
-
         </section>
+        <!-- #endregion -->
 
-        <section class="item card timeline" id="academic">
+        <!-- #region Formação -->
+        <section class="item card timeline reveal" id="academic">
             <h2>Formação acadêmica</h2>
             <ul>
                 <li>
@@ -109,8 +129,10 @@
                 </li>
             </ul>
         </section>
+        <!-- #endregion -->
 
-        <section class="item card timeline" id="experience">
+        <!-- #region Experiência -->
+        <section class="item card timeline reveal" id="experience">
             <h2>Experiência</h2>
             <ul>
                 <li>
@@ -120,22 +142,22 @@
                 </li>
             </ul>
         </section>
-
-      
-
-       
+        <!-- #endregion -->       
     </main>
-    
+<!-- #endregion --> 
+ 
+<!-- #region Footer -->
     <footer>
         <p>© 2026 Jonathas Seri</p>
         <div class="footer-social">
             <a href="https://www.linkedin.com/in/jonathas-seri/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                <i class="devicon-linkedin-plain"></i>
+                <i class="bi bi-linkedin"></i>
             </a>
             <a href="https://github.com/seri-02" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <i class="devicon-github-original"></i>
+                <i class="bi bi-github"></i>
             </a>
         </div>
     </footer>
+<!-- #endregion --> 
 </body>
 </html>
